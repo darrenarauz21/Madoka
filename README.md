@@ -26,7 +26,7 @@ Todo ocurre **localmente en tu PC**. Ningún archivo se sube a internet.
 
 ## Requisitos
 
-- **Python 3.8 o superior** — [python.org/downloads](https://www.python.org/downloads/)
+- **Python 3.8 o superior** - [python.org/downloads](https://www.python.org/downloads/)
 - **Windows, macOS o Linux**
 - **Edge, Chrome o Firefox**
 
@@ -34,18 +34,18 @@ Todo ocurre **localmente en tu PC**. Ningún archivo se sube a internet.
 
 ## Instalación
 
-### Paso 1 — Descargar
+### Paso 1 - Descargar
 
 Descarga el archivo `madoka.zip` desde [Releases](../../releases) y descomprímelo en una carpeta permanente, por ejemplo:
 
 - Windows: `C:\Users\TuUsuario\madoka\`
 - macOS/Linux: `~/madoka/`
 
-> ⚠️ No lo descomprimas en la carpeta de Descargas — si la limpias, dejarás de tener el servidor.
+> ⚠️ No lo descomprimas en la carpeta de Descargas - si la limpias, dejarás de tener el servidor.
 
 ---
 
-### Paso 2 — Instalar el servidor
+### Paso 2 - Instalar el servidor
 
 Abre una terminal en la carpeta donde descomprimiste el ZIP y ejecuta:
 
@@ -72,13 +72,13 @@ Al terminar verás algo así:
 ✔  Servidor activo en http://localhost:5050
 ```
 
-> **Sin permisos de administrador en Windows:** El instalador usa automáticamente el registro de inicio de sesión del usuario — funciona igual, sin necesidad de ejecutar como administrador.
+> **Sin permisos de administrador en Windows:** El instalador usa automáticamente el registro de inicio de sesión del usuario - funciona igual, sin necesidad de ejecutar como administrador.
 
 > **Con permisos de administrador en Windows:** El servidor se instala como servicio de Windows real y aparece en `services.msc` como "Madoka Scanner". Arranca incluso antes de que inicies sesión.
 
 ---
 
-### Paso 3 — Verificar el servidor
+### Paso 3 - Verificar el servidor
 
 Abre tu navegador y ve a:
 ```
@@ -97,7 +97,7 @@ python madoka.py start
 
 ---
 
-### Paso 4 — Instalar la extensión
+### Paso 4 - Instalar la extensión
 
 #### Edge y Chrome
 
@@ -125,9 +125,9 @@ Abre el proyecto generado en Xcode y ejecútalo. Solo disponible en Mac con Xcod
 
 ---
 
-### Paso 5 — Activar notificaciones
+### Paso 5 - Activar notificaciones
 
-Al hacer clic en el ícono de Madoka en la barra del navegador, se abre el popup. Haz clic en el botón **⚙** (ajustes) y activa **Notificaciones**. Si es la primera vez, el navegador te pedirá permiso — acéptalo.
+Al hacer clic en el ícono de Madoka en la barra del navegador, se abre el popup. Haz clic en el botón **⚙** (ajustes) y activa **Notificaciones**. Si es la primera vez, el navegador te pedirá permiso - acéptalo.
 
 ---
 
@@ -139,9 +139,9 @@ Cuando termina una descarga, aparece una notificación en la esquina de tu panta
 
 | Resultado | Notificación |
 |---|---|
-| Archivo normal | ✅ **Madoka — Archivo verificado** · `runner.pdf` · Tipo: PDF Document (99% confianza) |
-| Extensión sospechosa | ⚠️ **Madoka — Extensión no coincide** · `foto.jpg` · Extensión .jpg pero contenido: PE executable |
-| Ejecutable detectado | ⚠️ **Madoka — Tipo ejecutable detectado** · `instalador.zip` · Tipo real: PE executable |
+| Archivo normal | ✅ **Madoka - Archivo verificado** · `runner.pdf` · Tipo: PDF Document (99% confianza) |
+| Extensión sospechosa | ⚠️ **Madoka - Extensión no coincide** · `foto.jpg` · Extensión .jpg pero contenido: PE executable |
+| Ejecutable detectado | ⚠️ **Madoka - Tipo ejecutable detectado** · `instalador.zip` · Tipo real: PE executable |
 
 ---
 
@@ -149,10 +149,10 @@ Cuando termina una descarga, aparece una notificación en la esquina de tu panta
 
 Haz clic en el ícono de Madoka en la barra del navegador para ver:
 
-- **Toggle ON/OFF** — Activa o desactiva el escáner sin desinstalar la extensión
-- **Estado del servidor** — Punto verde si el servidor local responde, rojo si no
-- **Historial** — Las últimas 12 descargas analizadas con su resultado
-- **⚙ Ajustes** — Panel con opciones adicionales
+- **Toggle ON/OFF** - Activa o desactiva el escáner sin desinstalar la extensión
+- **Estado del servidor** - Punto verde si el servidor local responde, rojo si no
+- **Historial** - Las últimas 12 descargas analizadas con su resultado
+- **⚙ Ajustes** - Panel con opciones adicionales
 
 ### Ajustes disponibles
 
@@ -198,7 +198,7 @@ También puedes ver los logs de la extensión en el navegador:
 1. Ve a `edge://extensions/` o `chrome://extensions/`
 2. Busca **Madoka Scanner**
 3. Haz clic en **Service Worker** o **Inspeccionar vistas**
-4. Pestaña **Console** — verás mensajes `[Madoka]` en tiempo real
+4. Pestaña **Console** - verás mensajes `[Madoka]` en tiempo real
 
 ---
 
@@ -229,10 +229,10 @@ Luego en el navegador ve a `edge://extensions/` y elimina **Madoka Scanner**.
 
 | Componente | Tecnología |
 |---|---|
-| Motor de detección | [Google Magika](https://github.com/google/magika) — deep learning, ~99% precisión |
+| Motor de detección | [Google Magika](https://github.com/google/magika) - deep learning, ~99% precisión |
 | Servidor local | Python + Flask + Waitress (Windows) / Gunicorn (macOS/Linux) |
 | Extensión | Manifest V3 (Chrome/Edge), Manifest V2 (Firefox) |
-| Comunicación | HTTP local en `127.0.0.1:5050` — nunca sale de tu PC |
+| Comunicación | HTTP local en `127.0.0.1:5050` - nunca sale de tu PC |
 
 ---
 
@@ -247,7 +247,7 @@ Luego en el navegador ve a `edge://extensions/` y elimina **Madoka Scanner**.
 
 ## Licencia
 
-MIT — úsalo, modifícalo y distribúyelo libremente.
+MIT - úsalo, modifícalo y distribúyelo libremente.
 
 ---
 
