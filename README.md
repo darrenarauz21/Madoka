@@ -30,6 +30,22 @@ Todo ocurre **localmente en tu PC**. Ningún archivo se sube a internet.
 - **Windows, macOS o Linux**
 - **Edge, Chrome o Firefox**
 
+> **Solo necesitas instalar Python.** Todo lo demás (Google Magika, Flask, Waitress, etc.) lo instala automáticamente `madoka.py` en el paso 2.
+
+### Instalar Python en Windows
+
+Durante la instalación marca obligatoriamente esta opción:
+```
+☑ Add Python to PATH
+```
+Sin esto el comando `python` no se reconoce en la terminal y los pasos siguientes fallarán.
+
+Verifica que quedó bien instalado antes de continuar:
+```powershell
+python --version
+```
+Debe mostrar algo como `Python 3.13.0`. Si sale error, reinstala Python marcando esa opción.
+
 ---
 
 ## Instalación
@@ -60,10 +76,12 @@ python3 madoka.py
 ```
 
 El instalador hace lo siguiente automáticamente:
-1. Instala las dependencias Python (`magika`, `flask`, `waitress`, etc.)
+1. Instala todas las dependencias Python: `magika` (motor de IA), `flask`, `flask-cors`, `waitress` en Windows o `gunicorn` en macOS/Linux
 2. Registra el servidor para que arranque automáticamente con tu sesión
 3. Inicia el servidor inmediatamente
 4. Verifica que todo responde correctamente
+
+> ⚠️ **No ejecutes `server.py` directamente.** Usa siempre `madoka.py` - es el único comando que necesitas y se encarga de instalar todo antes de arrancar.
 
 Al terminar verás algo así:
 ```
