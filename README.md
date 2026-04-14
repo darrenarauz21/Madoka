@@ -2,7 +2,7 @@
 
 > Analiza cada archivo que descargas usando inteligencia artificial, antes de que lo abras.
 
-Madoka Scanner es una extensión para navegador que se conecta a un servidor local en tu PC y usa **Google Magika** — el mismo motor de IA que usa Google internamente en Gmail, Drive y VirusTotal — para detectar el tipo real de cada archivo descargado, independientemente de su extensión declarada.
+Madoka Scanner es una extensión para navegador que se conecta a un servidor local en tu PC y usa **Google Magika** - el mismo motor de IA que usa Google internamente en Gmail, Drive y VirusTotal - para detectar el tipo real de cada archivo descargado, independientemente de su extensión declarada.
 
 Si descargas un archivo `.jpg` que en realidad es un ejecutable, Madoka te avisa antes de que lo abras.
 
